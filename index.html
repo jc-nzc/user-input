@@ -2,15 +2,32 @@
 <html lang="en" dir="ltr">
 	<head>
 		<meta charset="utf-8">
-		<title></title>
+		<link rel="stylesheet" href="style.css">
+		<title>Klaviyo Template</title>
 	</head>
 	<body>
-		<form><br>
+		<!-- <form><br>
 		Enter your First Name: <input type="text" id="firstname1"/><br><br>
 		Enter your Last Name: <input type="text" id="lastname1"/><br><br>
 		<input type="submit" value="Submit" onclick="formdata()"/><br>
-		</form>
+		</form> -->
+		<div class="container">
+		  <h1>SMS Opt-In Webform</h1>
+		  <form id="myForm" onSubmit="alert('Thank you for subscribing!');" action="submit.php" method="post">
+		    <!-- <label for="name">Name</label><br />
+		    <input type="text" id="name" name="name" placeholder="Ex. Logan Garcia" required />
+		    <br> -->
+				<label for="number">Phone Number</label><br />
+				<input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required / >
+				<!-- <br>
+		    <label for="email">Email</label><br />
+		    <input type="text" id="email" name="email" pattern=".+@.+\.com" placeholder="Ex. user@domain.com" required /> -->
+				<br>
+				<br>
+		    <input type="submit" value="Submit" />
+		  </form>
+		</div>
 		<script type="text/javascript" src="script.js"></script>
-		
+
 	</body>
 </html>
