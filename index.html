@@ -3,30 +3,25 @@
 	<head>
 		<meta charset="utf-8">
 		<link rel="stylesheet" href="style.css">
-		<title>Klaviyo Template</title>
+		<title>SMS and Email Opt In Template</title>
 	</head>
 	<body>
-		<!-- <form><br>
-		Enter your First Name: <input type="text" id="firstname1"/><br><br>
-		Enter your Last Name: <input type="text" id="lastname1"/><br><br>
-		<input type="submit" value="Submit" onclick="formdata()"/><br>
-		</form> -->
+
 		<div class="container">
-		  <h1>SMS Opt-In Webform</h1>
-		  <form id="myForm" onSubmit="alert('Thank you for subscribing!');" action="submit.php" method="post">
-		    <!-- <label for="name">Name</label><br />
-		    <input type="text" id="name" name="name" placeholder="Ex. Logan Garcia" required />
-		    <br> -->
-				<label for="number">Phone Number</label><br />
-				<input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required / >
-				<!-- <br>
-		    <label for="email">Email</label><br />
-		    <input type="text" id="email" name="email" pattern=".+@.+\.com" placeholder="Ex. user@domain.com" required /> -->
-				<br>
-				<br>
-		    <input type="submit" value="Submit" />
-		  </form>
+			<h1>Webform Template</h1>
+			<div class="form-fields">
+				<form class="main-payload"><br>
+				Enter your First Name: <br><input type="text" id="fName" placeholder="John / Jane"/><br><br>
+				Enter your Last Name: <br><input type="text" id="lName" placeholder="Smith"/><br><br>
+				Enter your Phone Number: <br><input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required / > <br><br>
+				Enter your Email Address: <br><input type="text" id="email" name="email" pattern=".+@.+\.com" placeholder="user@gmail.com" required /> <br><br>
+				<input type="button" value="Submit" onclick="formData()"/><br>
+				</form>
+				<br><br.
+				<div id="response"></div>
+			</div>
 		</div>
+
 		<script type="text/javascript" src="script.js"></script>
 
 	</body>

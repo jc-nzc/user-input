@@ -21,6 +21,10 @@ p {
   padding-right: 56px;
 }
 
+.form-fields{
+  padding-left: 70px;
+}
+
 .container {
   display: inline-block;
   margin-left: auto;
@@ -34,7 +38,7 @@ input {
 }
 
 /* in fact not file-upload-button */
-/* Docs save us again: 
+/* Docs save us again:
 https://developer.mozilla.org/en-US/docs/Web/CSS/::file-selector-button */
 input::file-selector-button {
   font-family: "Muli", sans-serif !important;
